@@ -1,4 +1,4 @@
-package I.Heranca;
+package J.ExercicioPraticoComHeranca;
 
 public class Aluno extends Pessoa {
 
@@ -21,8 +21,8 @@ public class Aluno extends Pessoa {
         this.curso = curso;
     }
 
-    public void cancelarMatricula() {
-        System.out.println("Matrícula será cancelada");
+    public void pagarMensalidade(){
+        System.out.println("Pagando mensalidade de aluno: " + this.nome);
     }
 
 }

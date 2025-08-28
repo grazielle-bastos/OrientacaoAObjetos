@@ -1,10 +1,10 @@
-package I.Heranca;
+package J.ExercicioPraticoComHeranca;
 
-public class Pessoa {
+public abstract class Pessoa {
 
-    private String nome;
-    private int idade;
-    private String sexo;
+    protected String nome;
+    protected int idade;
+    protected String sexo;
 
     public String getNome() {
         return nome;
@@ -30,16 +30,17 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public void fazerAniversario() {
-        this.idade ++;
+    public void fazerAniversario(){
+        this.idade++;
     }
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "Dados{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", sexo='" + sexo + '\'' +
                 '}';
     }
+
 }
